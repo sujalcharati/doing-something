@@ -1,7 +1,6 @@
 import express from "express"
-import { WebSocketServer } from "ws";
+import { WebSocketServer, WebSocket } from "ws";
 import http from "http"
-import { join } from "path";
 
 
 const app = express();
@@ -17,12 +16,13 @@ wss.on("connection",(ws)=>{
     ws.on("message",(data)=>{
 
         try{
-
+            // data.send(" hello")
             const {username ,message} = JSON.parse(data);
+            console.log(`${username}:${message}`);
 
             const outgoing = JSON.stringify({ username, message});
             wss.clients.forEach( (client)=>{
-                if( client.readyState === WebSocket.OPEN){
+                if( client !== ws && client.readyState === WebSocket.OPEN){
                     client.send(outgoing);
                 }
             })
@@ -34,7 +34,7 @@ wss.on("connection",(ws)=>{
 
     })
 
-    ws.on("close",(data)=>{
+    ws.on("close",()=>{
         console.log(" client closed successfully")
     });
 });
