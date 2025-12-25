@@ -17,7 +17,12 @@ function App() {
     }
 
     ws.current.onmessage = (e)=>{
-      setMessages((prev)=> [...prev, e.data]);
+      try {
+        const { username,message} = JSON.parse(e.data);
+        setMessages((prev)=> [...prev, `${username}:${message}`])
+      } catch{
+        setMessages((prev)=> [...prev, e.data]);
+      }
     };
     return ()=>{
       ws.current?.close();
@@ -34,7 +39,7 @@ function App() {
     if (input.trim() && ws.current?.readyState === WebSocket.OPEN) {
       ws.current.send(JSON.stringify({
         username,
-        messages : input
+        message : input
 
       }));
       setMessages((prev) => [...prev, input]); 
