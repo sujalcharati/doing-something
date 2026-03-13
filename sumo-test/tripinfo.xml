@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-01 22:27:32 by Eclipse SUMO sumo Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="veh1" depart="0.00" departLane="e1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="39.00" arrivalLane="e1_0" arrivalPos="500.00" arrivalSpeed="14.29" duration="39.00" routeLength="494.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="4.82" rerouteNo="0" devices="tripinfo_veh1" vType="car" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="veh2" depart="5.00" departLane="e1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="48.00" arrivalLane="e1_0" arrivalPos="500.00" arrivalSpeed="12.77" duration="43.00" routeLength="494.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="4.25" rerouteNo="0" devices="tripinfo_veh2" vType="car" speedFactor="0.94" vaporized=""/>
+</tripinfos>

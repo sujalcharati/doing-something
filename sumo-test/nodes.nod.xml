@@ -1,0 +1,32 @@
+<nodes>
+  <!-- Main grid 4x4 -->
+  <node id="n1" x="0" y="0" type="traffic_light"/>
+  <node id="n2" x="150" y="0" type="traffic_light"/>
+  <node id="n3" x="300" y="0" type="traffic_light"/>
+  <node id="n4" x="450" y="0"/>
+
+  <node id="n5" x="0" y="150" type="traffic_light"/>
+  <node id="n6" x="150" y="150" type="traffic_light"/>
+  <node id="n7" x="300" y="150" type="traffic_light"/>
+  <node id="n8" x="450" y="150"/>
+
+  <node id="n9" x="0" y="300"/>
+  <node id="n10" x="150" y="300" type="traffic_light"/>
+  <node id="n11" x="300" y="300" type="traffic_light"/>
+  <node id="n12" x="450" y="300"/>
+
+  <node id="n13" x="0" y="450"/>
+  <node id="n14" x="150" y="450"/>
+  <node id="n15" x="300" y="450"/>
+  <node id="n16" x="450" y="450"/>
+
+  <!-- Entry/exit points -->
+  <node id="entry_w1" x="-80" y="0"/>
+  <node id="entry_w2" x="-80" y="150"/>
+  <node id="entry_e1" x="530" y="150"/>
+  <node id="entry_e2" x="530" y="300"/>
+  <node id="entry_n1" x="150" y="530"/>
+  <node id="entry_n2" x="300" y="530"/>
+  <node id="entry_s1" x="150" y="-80"/>
+  <node id="entry_s2" x="300" y="-80"/>
+</nodes>

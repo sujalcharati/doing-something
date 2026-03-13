@@ -1,0 +1,102 @@
+<routes>
+  <!-- Vehicle types -->
+  <vType id="car" accel="2.6" decel="4.5" length="5" maxSpeed="15" color="1,1,0"/>
+  <vType id="car_red" accel="2.6" decel="4.5" length="5" maxSpeed="14" color="1,0,0"/>
+  <vType id="car_blue" accel="2.6" decel="4.5" length="5" maxSpeed="16" color="0,0.5,1"/>
+  <vType id="car_green" accel="2.6" decel="4.5" length="5" maxSpeed="15" color="0,1,0"/>
+  <vType id="car_purple" accel="2.6" decel="4.5" length="5" maxSpeed="15" color="0.8,0,0.8"/>
+  <vType id="bus" accel="1.2" decel="3.0" length="12" maxSpeed="10" color="0,0,0.8"/>
+  <vType id="truck" accel="1.0" decel="2.5" length="10" maxSpeed="11" color="0.6,0.3,0"/>
+
+  <!-- West to East on row 1 -->
+  <vehicle id="v01" type="car" depart="0">
+    <route edges="in_w1 h1_1 h1_2 h1_3"/>
+  </vehicle>
+  <vehicle id="v02" type="car_green" depart="2">
+    <route edges="in_s1 v2_1 v2_2 v2_3 out_n1"/>
+  </vehicle>
+  <vehicle id="v03" type="car_red" depart="3">
+    <route edges="in_w2 h2_1 h2_2 h2_3 out_e1"/>
+  </vehicle>
+  <vehicle id="v04" type="bus" depart="4">
+    <route edges="in_e1 h2_3r h2_2r h2_1r out_w2"/>
+  </vehicle>
+  <vehicle id="v05" type="car_purple" depart="5">
+    <route edges="in_s2 v3_1 v3_2 v3_3 out_n2"/>
+  </vehicle>
+  <vehicle id="v06" type="car_blue" depart="6">
+    <route edges="in_w1 h1_1 h1_2 h1_3 v4_1 v4_2 out_e2"/>
+  </vehicle>
+  <vehicle id="v07" type="truck" depart="7">
+    <route edges="in_n1 v2_3r v2_2r v2_1r out_s1"/>
+  </vehicle>
+  <vehicle id="v08" type="car" depart="8">
+    <route edges="in_w2 h2_1 h2_2 h2_3 out_e1"/>
+  </vehicle>
+  <vehicle id="v09" type="car_green" depart="10">
+    <route edges="in_s1 v2_1 v2_2 v2_3 out_n1"/>
+  </vehicle>
+  <vehicle id="v10" type="car_red" depart="12">
+    <route edges="in_e2 h3_3r h3_2r h3_1r"/>
+  </vehicle>
+  <vehicle id="v11" type="car_purple" depart="14">
+    <route edges="in_s2 v3_1 v3_2 v3_3 out_n2"/>
+  </vehicle>
+  <vehicle id="v12" type="car_blue" depart="16">
+    <route edges="in_n2 v3_3r v3_2r v3_1r out_s2"/>
+  </vehicle>
+  <vehicle id="v13" type="car" depart="18">
+    <route edges="in_w1 h1_1 h1_2 h1_3"/>
+  </vehicle>
+  <vehicle id="v14" type="car_red" depart="20">
+    <route edges="in_e1 h2_3r h2_2r h2_1r out_w2"/>
+  </vehicle>
+  <vehicle id="v15" type="bus" depart="22">
+    <route edges="in_n1 v2_3r v2_2r v2_1r out_s1"/>
+  </vehicle>
+  <vehicle id="v16" type="car_green" depart="24">
+    <route edges="in_w2 h2_1 h2_2 h2_3 out_e1"/>
+  </vehicle>
+  <vehicle id="v17" type="car_purple" depart="26">
+    <route edges="in_s1 v2_1 v2_2 v2_3 out_n1"/>
+  </vehicle>
+  <vehicle id="v18" type="car_blue" depart="28">
+    <route edges="in_s2 v3_1 v3_2 v3_3 out_n2"/>
+  </vehicle>
+  <vehicle id="v19" type="truck" depart="30">
+    <route edges="in_e2 h3_3r h3_2r h3_1r"/>
+  </vehicle>
+  <vehicle id="v20" type="car" depart="32">
+    <route edges="in_w1 h1_1 h1_2 h1_3 v4_1 out_e1"/>
+  </vehicle>
+  <vehicle id="v21" type="car_red" depart="34">
+    <route edges="in_n2 v3_3r v3_2r v3_1r out_s2"/>
+  </vehicle>
+  <vehicle id="v22" type="car_green" depart="36">
+    <route edges="in_e1 h2_3r h2_2r h2_1r out_w2"/>
+  </vehicle>
+  <vehicle id="v23" type="bus" depart="38">
+    <route edges="in_w2 h2_1 h2_2 h2_3 out_e1"/>
+  </vehicle>
+  <vehicle id="v24" type="car_purple" depart="40">
+    <route edges="in_s1 v2_1 v2_2 v2_3 out_n1"/>
+  </vehicle>
+  <vehicle id="v25" type="car_blue" depart="42">
+    <route edges="in_n1 v2_3r v2_2r v2_1r out_s1"/>
+  </vehicle>
+  <vehicle id="v26" type="car" depart="44">
+    <route edges="in_s2 v3_1 v3_2 v3_3 out_n2"/>
+  </vehicle>
+  <vehicle id="v27" type="truck" depart="46">
+    <route edges="in_w1 h1_1 h1_2 h1_3"/>
+  </vehicle>
+  <vehicle id="v28" type="car_red" depart="48">
+    <route edges="in_e2 h3_3r h3_2r h3_1r"/>
+  </vehicle>
+  <vehicle id="v29" type="car_green" depart="50">
+    <route edges="in_e1 h2_3r h2_2r h2_1r out_w2"/>
+  </vehicle>
+  <vehicle id="v30" type="car_purple" depart="52">
+    <route edges="in_w2 h2_1 h2_2 h2_3 out_e1"/>
+  </vehicle>
+</routes>
