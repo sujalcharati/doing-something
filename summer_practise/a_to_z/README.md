@@ -1,16 +1,19 @@
-# React + Vite
+# A to Z — Practice Assignments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Assignment 1: Hello World
 
-Currently, two official plugins are available:
+A first React component that renders a "Hello World" message on the screen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Screenshot:**
 
-## React Compiler
+![Hello World screenshot](./screenshots/hello-world.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Assignment 2: Basic Portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A personal portfolio page built with React + Tailwind. Includes a navbar (Home / About / Skills / Projects / Contact) and a hero section with profile image, intro heading, short bio, and resume link.
+
+**Screenshot:**
+
+![Portfolio screenshot](./screenshots/portfolio.png)
