@@ -6,6 +6,7 @@ import './App.css'
 import { Helloworld } from '../components/Helloworld'
 import { Portfolionavbar } from '../components/Portfolionavbar'
 import { Portfoliohero } from '../components/Portfoliohero'
+import { Contactform } from '../components/Contactform'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +17,10 @@ function App() {
     {/* assignment 1 */}
     {/* <Helloworld/> */}
     {/* assignment 2  */}
-    <Portfolionavbar/>
-    <Portfoliohero/>
+    {/* <Portfolionavbar/>
+    <Portfoliohero/> */}
+    {/* assignment 3 */}
+    <Contactform/>
 
 
     </>
