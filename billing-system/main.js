@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/customers", customerRouter);
-app.user("/api/plans", planRouter)
+app.use("/api/plans", planRouter);
+app.use("/api/subscriptions", subscriptionRouter);
 
 app.listen(PORT,()=> console.log(`app is running at port ${PORT}`));
