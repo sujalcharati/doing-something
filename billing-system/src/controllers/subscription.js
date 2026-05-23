@@ -80,7 +80,7 @@ export const cancelSubscription = (req, res)=>{
     }
 
     found.status = "cancelled";
-    found.canceledAt = now Date().toISOstring();
+    found.canceledAt = new Date().toISOString();
 
     return res.status(201).json(subscriptions);
 }
